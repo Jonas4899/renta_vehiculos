@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700&display=swap");
+
+:root {
+  --inter: "Inter", sans-serif;
+  --orange: #db7338;
+  --paleOrange: #f8d0b9;
+  --white: #fcf9f8;
+  --gray: #cacaca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--inter);
+}
+
+header {
+  padding: 20px;
+  height: 5%;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 95%;
+}
+
+h1 {
+  color: var(--orange);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.atrasBtn {
+  width: 30px;
+}
+
+.checkImg {
+  width: 200px;
+}
+
+.paginaPrincipalBtn {
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}

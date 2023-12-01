@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /*Fonts*/
+  --inter: "Inter", sans-serif;
+
+  /*Colors*/
+  --orange: #db7338;
+  --paleOrange: #f8d0b9;
+  --white: #fcf9f8;
+  --gray: #cacaca;
+  --darkGray: #5f5f5f;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--inter);
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/*------------------------------------------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 10%;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.config_logo,
+.user_logo {
+  width: 30px;
+}
+
+.notificacion_logo {
+  width: 50px;
+}
+
+.nav_element {
+  text-decoration: none;
+  color: var(--darkGray);
+  font-size: 1rem;
+}
+
+.nav_element:hover {
+  color: var(--orange);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* ----------------------- MAIN --------------------------*/
+
+.main {
+  width: 100%;
+}
+
+.div__atras {
+  width: 100%;
+}
+
+.boton__atras {
+  text-decoration: none;
+  padding-left: 80px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--darkGray);
+}
+
+.vehiculo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.vehiculo__elementos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.9em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.vehiculo__logo {
+  width: 100px;
+}
+
+.vehiculo__imagen {
+  width: 35%;
+}
+
+.vehiculo__imagen-img {
+  width: 100%;
+}
+
+/*--------------- Seccion Informacion---------------*/
+
+.section__informacion {
+  display: flex;
+  justify-content: center;
+  gap: 280px;
+}
+
+.informacion {
+  width: 35%;
+  box-shadow: 0px 1px 20px 0px var(--gray);
+  padding: 30px 40px;
+  border-radius: 20px;
+}
+
+/*----------------- CARACTERISTICAS -------------------*/
+.subtitulo,
+.características__h2 {
+  font-size: 2em;
+  font-style: italic;
+  color: var(--orange);
+  padding-bottom: 15px;
+}
+
+.característica_p {
+  display: inline-block;
+}
+
+.características-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px 10px 0px;
+}
+
+.icons2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon_text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.precio_renta {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 28%;
+}
+
+.precio {
+  font-size: 1.5em;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.boton_renta {
+  text-decoration: none;
+  background-color: var(--orange);
+  text-align: center;
+  width: 40%;
+  padding: 12px 35px;
+  color: var(--white);
+  font-style: italic;
+  font-size: 95%;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgb(94, 94, 94);
+  border-radius: 10px;
+}
+
+/*------- section seguro --------*/
+
+.seguro-icon {
+  width: 60px;
+}
+
+#parrafo_seguro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.cobertura__item {
+  margin: 18px 0px;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 500;
+}

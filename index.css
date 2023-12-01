@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /*Fonts*/
+  --inter: "Inter", sans-serif;
+
+  /*Colors*/
+  --orange: #db7338;
+  --paleOrange: #f8d0b9;
+  --white: #fcf9f8;
+  --gray: #cacaca;
+  --darkGray: #5f5f5f;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--inter);
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/*--------------- HEADER ----------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 10%;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.config_logo,
+.user_logo {
+  width: 30px;
+}
+
+.notificacion_logo {
+  width: 50px;
+}
+
+.nav_element {
+  text-decoration: none;
+  color: var(--darkGray);
+  font-size: 1rem;
+}
+
+.nav_element:hover {
+  color: var(--orange);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* --------- fondo -----------*/
+.background {
+  width: 100%;
+}
+
+.background-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*----------- Formulario -------------*/
+
+.section__first-section {
+  position: relative;
+}
+
+.form__container {
+  position: absolute;
+  width: 30%;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  top: 20%;
+  left: 5%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form__input {
+  padding: 3%;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+.boton__buscar {
+  padding: 3%;
+  background-color: var(--orange);
+  border-radius: 10px;
+  border: 0px solid var(--gray);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.form__h2 {
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------*/
+
+.populares {
+  font-size: 30px;
+  font-style: italic;
+  padding: 30px 0px 0px 50px;
+}
+
+/* -------------- SECCION TARGETAS ----------------*/
+
+.grid-container {
+  display: grid;
+  gap: 80px;
+  padding: 80px;
+  width: auto;
+  grid-template-columns: repeat(3, 1fr); /* Dos columnas de tamaño igual */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 10px 1px var(--gray);
+  border-radius: 20px;
+  text-align: center;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulares {
+  margin-bottom: 35px;
+}
+
+.card_titulo {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+}
+
+.card_tipo {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--darkGray);
+}
+
+.caracteristicas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 15px 0px 20px 0px;
+}
+
+.caracteristicas_elementos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.caracteristicas_numero {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  color: var(--darkGray);
+}
+
+.vehiculo-img {
+  width: 70%;
+}
+
+.boton__vehiculo {
+  text-decoration: none;
+  background-color: var(--orange);
+  padding: 3% 20%;
+  border-radius: 15px;
+  color: var(--white);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}

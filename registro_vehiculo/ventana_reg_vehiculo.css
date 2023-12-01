@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700&display=swap');
+
+:root{
+  --inter: 'Inter', sans-serif;
+  --orange:#DB7338;
+  --paleOrange: #F8D0B9;
+  --white: #FCF9F8;
+  --gray:#CACACA;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family:var(--inter);
+}
+
+.registro-vehiculo {
+  background-color: rgba(240, 240, 240, 0.822);
+  width: 80%; /* O el ancho que desees */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Color de fondo del contenedor del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+.registro-vehiculo h2 {
+  text-align: center;
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+
+.contenedor-formulario {
+  padding: 20px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  /* border-width: 2rem; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fila-formulario {
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.grupo-formulario {
+  flex-basis: 48%; /* Ajusta este valor según el espacio entre campos */
+}
+
+.grupo-formulario.grande {
+  flex-basis: 100%; /* Para campos de texto más grandes */
+}
+#estadoVehiculo,#caracteristicasVehiculo{
+  resize: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="date"],
+input[type="number"],
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc; /* Borde de los campos de entrada */
+  border-radius: 4px; /* Bordes redondeados para las entradas */
+}
+
+input[type="date"],input[type="number"], input[type="file"], input[type="text"] {
+  background-color: #CACACA;
+  padding: 5px; /* Ajuste para el botón de carga */
+}
+
+textarea {
+  background-color: #CACACA;
+  height: 100px; /* Altura del campo de texto */
+}
+
+#tipoVehiculo{
+  width: flex;
+}
+
+.boton-siguiente {
+  background-color: var(--orange); /* Este es un color naranja, ajusta el código de color según sea necesario */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px; /* Ajusta según la redondez que desees */
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Para un efecto suave al cambiar de estado */
+  display: flex;
+  justify-content: center;
+  ;  width: 400px;
+}
+
+.contenedor-boton{
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.boton-siguiente:hover {
+  background-color: #af5d2d; /* Un tono más oscuro para el efecto hover */
+}
+
+.contenerdor_botonatras{
+  position: relative;
+}
+
+#atras{
+  position:fixed;
+  font-size: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+  text-decoration: underline 1px #1b1b1b;
+  color: black
+  
+}
+
+#atras:hover {
+  color: var(--gray); /* Un tono más oscuro para el efecto hover */
+  text-decoration: underline 1px var(--gray);
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Contenedor para la página de confirmación */
+.contenedor-confirmacion {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+/* Estilo del ícono de verificación */
+.icono-confirmacion {
+  color: #4CAF50; /* Verde de confirmación */
+  margin-bottom: 20px;
+}
+
+/* Título de la página de confirmación */
+.contenedor-confirmacion h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Mensaje de confirmación */
+.mensaje-confirmacion {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Botón principal para volver a la página principal */
+.boton-principal {
+  background-color: var(--orange); /* Naranja */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-principal:hover {
+  background-color: #af5d2d; /* Naranja más oscuro */
+}
+
+
+/* Incluye estilos para los estados de focus y hover para mejorar la accesibilidad y la interacción */

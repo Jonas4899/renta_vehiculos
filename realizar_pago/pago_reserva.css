@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700&display=swap");
+
+:root {
+  --inter: "Inter", sans-serif;
+  --orange: #db7338;
+  --paleOrange: #f8d0b9;
+  --white: #fcf9f8;
+  --gray: #cacaca;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--inter);
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 10%;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.config_logo,
+.user_logo {
+  width: 30px;
+}
+
+.notificacion_logo {
+  width: 50px;
+}
+
+.nav_element {
+  text-decoration: none;
+  color: var(--darkGray);
+  font-size: 1rem;
+}
+
+.nav_element:hover {
+  color: var(--orange);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.main {
+  background-color: rgba(240, 240, 240, 0.822);
+  width: 100%; /* O el ancho que desees */
+  height: 100%;
+  margin: 0px auto;
+  padding: 20px;
+  /* background-color: #fff; Color de fondo del contenedor del formulario */
+}
+
+.Panel {
+  max-width: 800px;
+  height: 80%;
+  padding: 20px;
+  border-style: hidden;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 3px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0px auto;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.Tarjeta {
+  background-image: linear-gradient(
+    to bottom right,
+    #db7338,
+    rgba(238, 127, 63, 0.801)
+  );
+  width: 70%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0px auto;
+  position: relative;
+  gap: 3%;
+}
+
+.metodospago {
+  margin: 25px 0px 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  gap: 2%;
+}
+
+.metodo_pago {
+  padding: 20px;
+  width: 18%;
+  height: 80px;
+  background-color: var(--gray);
+  border-radius: 15px;
+}
+
+.metodos_pago-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Nums {
+  height: 10%;
+  color: #ffffff;
+}
+
+.Titular {
+  padding-top: 10px;
+  height: 10%;
+  width: 50%;
+}
+
+.Informacion {
+  margin-left: 5%;
+  width: 85%;
+  margin-top: 40%;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.chip {
+  margin-top: 25%;
+  display: flex;
+  background-color: #cacacae3;
+  align-items: center;
+  height: 15%;
+  width: 15%;
+  border-radius: 10px;
+}
+
+.Texto,
+.Titular {
+  display: block; /* Restablece a la visualización de bloque si se ha cambiado */
+  width: 100%; /* Toma el ancho completo del contenedor */
+  margin-top: 10px; /* Añade un poco de margen superior, ajusta según sea necesario */
+  margin-bottom: 10px; /* Añade un poco de margen inferior, ajusta según sea necesario */
+  color: #ffffff;
+}
+
+.contenedor-boton {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-siguiente {
+  background-color: var(
+    --orange
+  ); /* Este es un color naranja, ajusta el código de color según sea necesario */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px; /* Ajusta según la redondez que desees */
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Para un efecto suave al cambiar de estado */
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+.boton-siguiente:hover {
+  background-color: #af5d2d; /* Un tono más oscuro para el efecto hover */
+}
+
+.Linea {
+  width: 70%;
+  height: 0%;
+  border: var(--gray) solid 1px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+
+.Totalapagar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}

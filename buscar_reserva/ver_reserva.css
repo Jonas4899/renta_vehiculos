@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /*Fonts*/
+  --inter: "Inter", sans-serif;
+
+  /*Colors*/
+  --orange: #db7338;
+  --paleOrange: #f8d0b9;
+  --white: #fcf9f8;
+  --gray: #cacaca;
+  --darkGray: #5f5f5f;
+  --verde: #40de40;
+  --rojo: #e13636;
+  --amarillo: #fccc19;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--inter);
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/*------------------------------------------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 10%;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.config_logo,
+.user_logo {
+  width: 30px;
+}
+
+.notificacion_logo {
+  width: 50px;
+}
+
+.nav_element {
+  text-decoration: none;
+  color: var(--darkGray);
+  font-size: 1rem;
+}
+
+.nav_element:hover {
+  color: var(--orange);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* ----------------------- MAIN --------------------------*/
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__container {
+  margin-top: 30px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* This creates two columns with equal width */
+  gap: 10px;
+  box-shadow: 1px 1px 15px 1px var(--gray);
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+#estado {
+  position: relative;
+  width: 12%;
+  min-width: 92px;
+  max-width: 150px;
+  padding: 8px 15px;
+  font-size: 1.1em;
+  font-style: italic;
+  top: 30px;
+  left: 40px;
+  border: 2px solid var(--verde);
+  border-radius: 10px;
+}
+
+#vehiculo {
+  position: relative;
+  top: 50px;
+  left: 80px;
+  font-size: 1.5em;
+  font-style: italic;
+  color: var(--orange);
+}
+
+.vehiculo__nombre {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 50px 0px 30px 0px;
+}
+
+.vehiculo__imagen {
+  width: 70%;
+}
+
+.vehiculo__imagen-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.left__section-vehiculo {
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.características-icons {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons1,
+.icons2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon_text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.característica_p {
+  display: inline-block;
+}
+
+/*---------- RIGHT SECTION -------------------------------*/
+
+.section__right {
+  width: 100%;
+}
+
+.section__right-h2 {
+  font-size: 2.4em;
+  margin: 40px 0px 20px 0px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 40px;
+}
+
+.form__input {
+  width: 90%;
+  padding: 12px 0px 12px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+}
+
+.form__label {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-style: italic;
+  margin: 10px 0px;
+}
+
+/*---------------- Precio ----------------*/
+
+.linea {
+  margin: 20px auto;
+  width: 90%;
+  height: 1px;
+  background-color: var(--gray);
+}
+
+.section__right-pago {
+  font-size: 1.3em;
+  font-weight: 600;
+  display: flex;
+  margin-left: 80px;
+  justify-content: start;
+  gap: 100px;
+  text-align: center;
+}
+
+.section__right-pago-enunciados {
+  color: var(--orange);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__right-pago-valores {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dias {
+  padding: 10px 0px;
+}
+
+.seguro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#seguro__enunciado {
+  padding-bottom: 10px;
+}
+
+#seguro__img {
+  width: 32%;
+}
+
+/*------- BOTONES -------*/
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12%;
+  margin-top: 4%;
+}
+
+.button {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: 600;
+  font-style: italic;
+  background-color: var(--orange);
+  width: 25%;
+  text-align: center;
+  padding: 12px 0px;
+  border-radius: 10px;
+}

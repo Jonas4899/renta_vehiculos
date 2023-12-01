@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700&display=swap");
+
+:root {
+  --inter: "Inter", sans-serif;
+  --orange: #db7338;
+  --paleOrange: #f8d0b9;
+  --white: #fcf9f8;
+  --gray: #cacaca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--inter);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 10%;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 600;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.config_logo,
+.user_logo {
+  width: 30px;
+}
+
+.notificacion_logo {
+  width: 50px;
+}
+
+.nav_element {
+  text-decoration: none;
+  color: var(--darkGray);
+  font-size: 1rem;
+}
+
+.nav_element:hover {
+  color: var(--orange);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+aside {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+aside span {
+  font-size: 1rem;
+  font-weight: 600;
+  border: #cacaca 1px solid;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card {
+  border: #cacaca 1px solid;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 60%;
+  display: flex;
+  gap: 4rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info_vehiculo {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info_vehiculo--informacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_vehiculo {
+  width: 80%;
+}
+
+.info_reserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.boton__vehiculo {
+  text-decoration: none;
+  background-color: var(--orange);
+  padding: 3% 20%;
+  border-radius: 15px;
+  color: var(--white);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+}
